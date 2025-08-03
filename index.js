@@ -105,7 +105,7 @@ const j2 = new Fighter({
     y: 10,
   },
   inverter: false,
-  imageSrc: "imagens/Kenji/Idle.png",
+  imageSrc: "imagens/kenji/Idle.png",
   frameMax: 4,
   scale: 2.5,
   offset: {
@@ -114,31 +114,31 @@ const j2 = new Fighter({
   },
   sprites: {
     idle: {
-      imageSrc: "imagens/Kenji/Idle.png",
+      imageSrc: "imagens/kenji/Idle.png",
       frameMax: 4,
     },
     run: {
-      imageSrc: "imagens/Kenji/Run.png",
+      imageSrc: "imagens/kenji/Run.png",
       frameMax: 8,
     },
     jump: {
-      imageSrc: "imagens/Kenji/Jump.png",
+      imageSrc: "imagens/kenji/Jump.png",
       frameMax: 2,
     },
     fall: {
-      imageSrc: "imagens/Kenji/Fall.png",
+      imageSrc: "imagens/kenji/Fall.png",
       frameMax: 2,
     },
     attack1: {
-      imageSrc: "imagens/Kenji/Attack1.png",
+      imageSrc: "imagens/kenji/Attack1.png",
       frameMax: 4,
     },
     takeHit: {
-      imageSrc: "imagens/Kenji/Take hit.png",
+      imageSrc: "imagens/kenji/Take hit.png",
       frameMax: 3,
     },
     death: {
-      imageSrc: "imagens/Kenji/Death.png",
+      imageSrc: "imagens/kenji/Death.png",
       frameMax: 7,
     },
   },
