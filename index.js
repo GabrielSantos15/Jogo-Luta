@@ -45,7 +45,7 @@ const j1 = new Fighter({
     y: 0,
   },
   inverter: false,
-  imageSrc: "./imagens/samuraiMack/Idle.png",
+  imageSrc: "imagens/samuraiMack/Idle.png",
   frameMax: 8,
   scale: 2.5,
   offset: {
@@ -54,32 +54,32 @@ const j1 = new Fighter({
   },
   sprites: {
     idle: {
-      imageSrc: "./imagens/samuraiMack/Idle.png",
+      imageSrc: "imagens/samuraiMack/Idle.png",
       frameMax: 8,
       image: new Image(),
     },
     run: {
-      imageSrc: "./imagens/samuraiMack/Run.png",
+      imageSrc: "imagens/samuraiMack/Run.png",
       frameMax: 8,
     },
     jump: {
-      imageSrc: "./imagens/samuraiMack/Jump.png",
+      imageSrc: "imagens/samuraiMack/Jump.png",
       frameMax: 2,
     },
     fall: {
-      imageSrc: "./imagens/samuraiMack/Fall.png",
+      imageSrc: "imagens/samuraiMack/Fall.png",
       frameMax: 2,
     },
     attack1: {
-      imageSrc: "./imagens/samuraiMack/Attack1.png",
+      imageSrc: "imagens/samuraiMack/Attack1.png",
       frameMax: 4,
     },
     takeHit: {
-      imageSrc: "./imagens/samuraiMack/Take Hit - white silhouette.png",
+      imageSrc: "imagens/samuraiMack/Take Hit - white silhouette.png",
       frameMax: 4,
     },
     death: {
-      imageSrc: "./imagens/samuraiMack/Death.png",
+      imageSrc: "imagens/samuraiMack/Death.png",
       frameMax: 6,
     },
   },
@@ -105,7 +105,7 @@ const j2 = new Fighter({
     y: 10,
   },
   inverter: false,
-  imageSrc: "./imagens/Kenji/Idle.png",
+  imageSrc: "imagens/Kenji/Idle.png",
   frameMax: 4,
   scale: 2.5,
   offset: {
@@ -114,31 +114,31 @@ const j2 = new Fighter({
   },
   sprites: {
     idle: {
-      imageSrc: "./imagens/Kenji/Idle.png",
+      imageSrc: "imagens/Kenji/Idle.png",
       frameMax: 4,
     },
     run: {
-      imageSrc: "./imagens/Kenji/Run.png",
+      imageSrc: "imagens/Kenji/Run.png",
       frameMax: 8,
     },
     jump: {
-      imageSrc: "./imagens/Kenji/Jump.png",
+      imageSrc: "imagens/Kenji/Jump.png",
       frameMax: 2,
     },
     fall: {
-      imageSrc: "./imagens/Kenji/Fall.png",
+      imageSrc: "imagens/Kenji/Fall.png",
       frameMax: 2,
     },
     attack1: {
-      imageSrc: "./imagens/Kenji/Attack1.png",
+      imageSrc: "imagens/Kenji/Attack1.png",
       frameMax: 4,
     },
     takeHit: {
-      imageSrc: "./imagens/Kenji/Take hit.png",
+      imageSrc: "imagens/Kenji/Take hit.png",
       frameMax: 3,
     },
     death: {
-      imageSrc: "./imagens/Kenji/Death.png",
+      imageSrc: "imagens/Kenji/Death.png",
       frameMax: 7,
     },
   },
