@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Luta de espadas</title>
+</head>
+
+<body>
+
+    <span for="tutorialShow" class="material-icons" id="infoBtn">
+        info_i
+    </span>
+
+    <section id="tutorial">
+        <h2>Tutorial</h2>
+        <article id="playerButtons">
+            <div class="player">
+                <h3>🟥 Jogador 1</h3>
+                <div class="keyboard">
+                    <img src="imagens/keyboard/keyboard_w.png" alt="tecla W" class="keyUp">
+                    <img src="imagens/keyboard/keyboard_a.png" alt="tecla A" class="keyLeft">
+                    <img src="imagens/keyboard/keyboard_s.png" alt="tecla S" class="keyDown">
+                    <img src="imagens/keyboard/keyboard_d.png" alt="tecla D" class="keyRight">
+                </div>
+                <ul>
+                    <li>W – Pular</li>
+                    <li>A – Esquerda</li>
+                    <li>D – Direita</li>
+                    <li>S – Atacar</li>
+                </ul>
+            </div>
+            <div class="player">
+                <h3>🟦 Jogador 2</h3>
+                <div class="keyboard">
+                    <img src="imagens/keyboard/keyboard_up.png" alt="tecla W" class="keyUp">
+                    <img src="imagens/keyboard/keyboard_left.png" alt="tecla A" class="keyLeft">
+                    <img src="imagens/keyboard/keyboard_bottom.png" alt="tecla S" class="keyDown">
+                    <img src="imagens/keyboard/keyboard_right.png" alt="tecla D" class="keyRight">
+                </div>
+                <ul>
+                    <li>↑ – Pular</li>
+                    <li>← – Esquerda</li>
+                    <li>→ – Direita</li>
+                    <li>↓ – Atacar</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <!-- <figure class="keyboard">
+                <img src="imagens/keyboard/keyboard_w.png" alt="tacla W" class="keyUp">
+                <img src="imagens/keyboard/keyboard_a.png" alt="tacla A" class="keyLeft">
+                <img src="imagens/keyboard/keyboard_s.png" alt="tacla S" class="keyDown">
+                <img src="imagens/keyboard/keyboard_d.png" alt="tacla D" class="keyRight"> -->
+    <section>
+        <!-- barra de vida -->
+        <div id="painel-vida">
+            <div class="barra-vida">
+                <div id="j1-life" class="porcentagem-vida"></div>
+            </div>
+            <div id="timer"></div>
+            <div class="barra-vida">
+                <div id="j2-life" class="porcentagem-vida"></div>
+            </div>
+        </div>
+        <!-- tela de vitoria -->
+        <div id="displayText">
+            <h3>empate</h3>
+            <span onclick="recarregar()" class="material-icons">
+                play_circle_filled
+            </span>
+        </div>
+        <!-- TELA -->
+        <canvas></canvas>
+    </section>
+    <script src="luta.js"></script>
+    <script src="classe.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

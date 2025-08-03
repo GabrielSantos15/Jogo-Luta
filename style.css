@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursiva;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #504442;
+    overflow: hidden;
+}
+
+#infoBtn{
+    position: fixed;
+    /* display: grid; */
+    place-content: center;
+    text-align: center;
+    bottom: 1em;
+    right: 1em;
+    color: #ffffff81;
+    font-size: 3em;
+    z-index: 3;
+    cursor: pointer;
+}
+
+
+#tutorial {
+    position: fixed;
+    inset: 0;
+    
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    
+    z-index: 2;
+    text-align: center;
+    
+    background-color: #504442e8;
+}
+
+#infoBtn:hover + #tutorial{
+    display: flex;
+}
+#tutorial h2 {
+    color: #fff;
+    font-size: 2em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+#playerButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: fit-content;
+    background: #ffffffe1;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.keyboard {
+    width: fit-content;
+    display: grid;
+    grid-template-areas:
+        ". u ."
+        "l d r";
+}
+
+.keyUp {
+    grid-area: u;
+}
+
+.keyLeft {
+    grid-area: l;
+}
+
+.keyDown {
+    grid-area: d;
+}
+
+.keyRight {
+    grid-area: r;
+}
+
+.player ul {
+    list-style: none;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section {
+    display: inline-block;
+    position: relative;
+}
+
+canvas {
+    width: 100dvw;
+    height: auto;
+    max-height: 100dvh;
+    aspect-ratio: 16/9 !important;
+    z-index: -1;
+}
+
+#painel-vida {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+.barra-vida {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border: 4px solid white;
+    background-color: #ff000073;
+
+    z-index: 0;
+}
+
+.porcentagem-vida {
+    position: absolute;
+    background: #818cf8;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    transition: .5s;
+}
+
+#j1-life {
+    right: 0;
+}
+
+#j2-life {
+    left: 0;
+}
+
+#timer {
+    background-color: #000000;
+    color: white;
+    width: 100px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+}
+
+#displayText {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    position: absolute;
+    color: white;
+
+    width: 100%;
+    height: 100%;
+    text-shadow: 0 0 5px #1d0088, 0 0 15px black;
+}
+
+#displayText>span {
+    font-size: 2.5em;
+    cursor: pointer;
+}
